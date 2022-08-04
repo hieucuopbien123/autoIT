@@ -1,0 +1,25 @@
+autoIT:
+autoIT là ngôn ngữ kịch bản để tự động hóa các thao tác trong window. Nó giả lập các thao tác hành động như ấn bàn phím, click chuột-> tạo ra các chương trình tự động trong window.
+Nó k hỗ trợ multithread, thg bị các trình diệt virus cho luôn là Trojan/Malware vì các phần mềm này thg đc viết bằng autoIT. Nó k hỗ trợ đầy đủ các thao tác nhưng cx hỗ trợ gần hết.
+
+autoIT với mục đích ban đầu là để viết các chương trình auto ví dụ như auto game, auto send request. Nhưng do có nh người viết virus, trojan nên các phần mềm diệt virus hiện nay cứ thấy phần mềm có chữ ký sử dụng autoIT thì nó cho auto là malware luôn.
+
+
+# Basic
+Chạy: Tools->Go = F5
+Hiện window-> Tools-> AU3Info-> kéo rê vào window cần lấy tiêu đề
+
+Các kiểu dữ liệu: 2; -4.56; "string"; '123'; True; False; '0x121223'(kiểu binary lưu giá trị byte, tương tự như kiểu pointer bắt đầu bằng 0x); 
+éo khác gì các ngôn ngữ khác, 0 là false, mọi số khác là true
+
+Help = F1 => gõ marco->enter-> hiển thị tất cả marco của autoIT-> cho ta truy xuất các thứ của cửa sổ or window, vd xem tên người dùng window hiện tại, ngày tháng, đường dẫn thư mục,..
+F1=> Function Reference xem thông tin các hàm dựng sẵn của autoIT
+F1=> Directives-> các chỉ thị trong autoIT (bắt đầu bằng dấu # ở đầu Ct)
+
+trỏ chuột đến dòng có include-> Tools-> Open include(ALT+I)-> hiển thị bên trong file include
+
+thao tác với gui code sẽ phưc tạp nên dùng Koda hơn: Tools-> Koda -> tạo và chỉnh -> generate code (F9)
+Để sửa: copy từ start đến end-> mở koda và xóa window mặc định đi(nếu k nó sẽ đổi tên form thành 1_1 nếu trùng)-> File-> Import-> dán vào và process-> chỉnh sửa-> generate-> lại copy paste từ start đến end
+
+cs là comments start
+ce là comments end
